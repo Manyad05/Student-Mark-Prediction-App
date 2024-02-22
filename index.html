@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <title>Student Mark Prediction</title>
+    </head>
+<body>
+    <h1>Student Mark Prediction</h1><br>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+    <form action="/" method="post">
+        <label for="student_hours">Enter Hours Studied:</label>
+        <input type="number" name="student_hours" id="student_hours" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
